@@ -16,4 +16,8 @@ appRouter.get( '/services/hello', function( req, res ) {
   res.json({ code: 'success', payload: 'World (LAP)' })
 })
 
+appRouter.get( '/services/bye', function( req, res ) {
+  res.json({ code: 'success', payload: 'bye World' })
+})
+
 module.exports = appRouter
